@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import projectData from "../Projects/projects.json";
+import projectData from "../Projects/Projects.json";
 import SectionHeader from "../../Components/Global/SectionHeader"
 import PropTypes from "prop-types";
 import Project from "./Project";
@@ -36,7 +36,7 @@ const Projects = ({backgroundColor}) => {
         link="https://www.youtube.com/embed/rYR4jLY1Bsw?si=4IB1chwsZPjJi9oV"
         github={dummyGit}
         flip={false}/>
-        
+
     </div>
   );
 };

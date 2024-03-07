@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./Contact.css";
-import contactData from "../Contact/contact.json";
+import contactData from "../Contact/Contact.json";
 import SectionHeader from "../../Components/Global/SectionHeader"
 import PropTypes from "prop-types";
 
