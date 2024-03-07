@@ -1,0 +1,23 @@
+.projects-section {
+    background-color: var(--backgroundColor, white);
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-layout {
+    font-size: large;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.project-description {
+display: flex;
+flex-flow: column wrap;
+}

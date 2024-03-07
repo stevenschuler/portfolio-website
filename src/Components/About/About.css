@@ -1,0 +1,14 @@
+.about-section {
+    background-color: var(--backgroundColor, red);
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.about-section > p {
+    font-size: large;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}

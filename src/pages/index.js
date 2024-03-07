@@ -1,21 +1,34 @@
-import * as React from "react"
+import React from "react"
 import { Link } from 'gatsby'
-import Layout from './Layout'
-import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
+import Intro from "../Components/Intro/Intro"
+import About from "../Components/About/About"
+import Projects from "../Components/Projects/Projects"
+import Contact from "../Components/Contact/Contact"
+import "../Styles/global.css"
 
 const IndexPage = () => {
   return (
     <main>
-      <Layout pageTitle="Main Page">
-        <p> This is my home page!</p>
-        <StaticImage
-        src="https://www.nawpic.com/media/2020/cute-cat-nawpic-7.jpg"
-      />
-      </Layout>
+      
+
+      <Helmet>
+      <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"></link>
+      <title>Steven Schuler</title> 
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </Helmet>
+    
+      <div className="page-layout">
+        <Intro role="developer" backgroundColor="orangered"/>
+        <About backgroundColor="#e5e8e7"/>
+        <Projects backgroundColor="#c9c9c9"/>
+        <Contact backgroundColor="#e5e8e7"/>
+      </div>
+      
     </main>
   )
 }
 
-export const Head = () => <title>Steven</title>
+// export const Head = () => 
 
-export default IndexPage
+export default IndexPage;

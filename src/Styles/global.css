@@ -1,0 +1,23 @@
+.page-layout {
+    display: flex;
+    flex-direction: column;
+}
+.section-header-left {
+    font-size: x-large;
+    border-bottom: 3px solid orangered;
+    width: 50%;
+}
+.section-header-left > h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.section-header-right {
+    font-size: x-large;
+    border-bottom: 3px solid orangered;
+    width: 50%;
+    text-align: right;
+}
+.section-header-right > h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

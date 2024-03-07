@@ -1,0 +1,13 @@
+.contact-section {
+    background-color: var(--backgroundColor, white);
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.contact-section > p {
+    font-size: large;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
