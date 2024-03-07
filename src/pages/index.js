@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import { Helmet } from "react-helmet"
 import Intro from "../Components/Intro/Intro"
 import About from "../Components/About/About"
@@ -10,8 +10,6 @@ import "../Styles/global.css"
 const IndexPage = () => {
   return (
     <main>
-      
-
       <Helmet>
       <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"></link>
       <title>Steven Schuler</title> 

@@ -7,8 +7,8 @@ const Project = ({data, link, github, flip}) => {
         "flexDirection": flip ? 'row-reverse' : 'row'
     };
     const textMargin = {
-        "margin-right": flip ? "0px" : "20px",
-        "margin-left": flip ? "20px" : "0px"
+        "marginRight": flip ? "0px" : "20px",
+        "marginLeft": flip ? "20px" : "0px"
     };
 
   return (
