@@ -1,48 +1,51 @@
 import React from "react";
 import "./Projects.css";
-import projectData from "../Projects/Projects.json";
 import SectionHeader from "../../Components/Global/SectionHeader"
 import PropTypes from "prop-types";
 import Project from "./Project";
 
-const Projects = ({backgroundColor}) => {
-    const bgc = {
-        backgroundColor
-    }
-    const dummyGit = "github.com/asdfgsdfgdf"
+const Projects = ({bgLight, bgDark}) => {
+    const lightBackground = {
+      backgroundColor: bgLight,
+    };
+    const darkBackground = {
+      backgroundColor: bgDark,
+    };
+
   return (
-    <div className="projects-section" style={bgc}>
+      <div>
+        <div className="projects-section" style={darkBackground}>
+          <SectionHeader headerText={"Personal Projects"} alignLeft={false} />
 
-        <SectionHeader headerText={"Personal Projects"} alignLeft={false} />
-        <Project  
-        data={projectData["personal-p1"]} 
-        link="https://www.youtube.com/embed/rYR4jLY1Bsw?si=4IB1chwsZPjJi9oV"
-        github={dummyGit}
-        flip={true}/>
-        <Project  
-        data={projectData["personal-p2"]} 
-        link="https://www.youtube.com/embed/fqOuJBc1fkQ?si=BOpYCSSF1UMjxUGR"
-        github={dummyGit}
-        flip={true}/>
-        
+          <Project  
+          id = {1}
+          disclaimer={false}
+          flip={true}/>
+          <Project  
+          id = {2}
+          disclaimer={false}
+          flip={true}/>
+          </div>
+
+        <div className="projects-section" style={lightBackground}>
         <SectionHeader headerText={"School Projects"} alignLeft={true} />
-        <Project 
-        data={projectData["school-p1"]} 
-        link="https://www.youtube.com/embed/wW3XsJxuosE?si=B5foyGWU21UtThA8"
-        github={dummyGit}
-        flip={false}/>
-        <Project  
-        data={projectData["school-p2"]} 
-        link="https://www.youtube.com/embed/rYR4jLY1Bsw?si=4IB1chwsZPjJi9oV"
-        github={dummyGit}
-        flip={false}/>
-
-    </div>
+          
+          <Project 
+          id = {3}
+          disclaimer={false}
+          flip={false}/>
+          <Project  
+          id = {4}
+          disclaimer={true}
+          flip={false}/>
+        </div>
+      </div>
   );
 };
 
 Projects.propTypes = {
-    backgroundColor: PropTypes.string,
+    bgLight: PropTypes.string,
+    bgDark: PropTypes.string,
   };
 
 export default Projects;

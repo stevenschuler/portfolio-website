@@ -1,6 +1,39 @@
 {
-    "school-p1": "Short description of my CSC 473 project",
-    "school-p2": "Short description of my SENG 474 project dfs fdh ihyofdae dfjdfs uhfwehude kjcdskjd sfuhdfs dsdfh dfdfjdf ",
-    "personal-p1": "Short description of this version of mario dgf fg  gdfdfggf fdg fgfdfgd fgdgdf gdf dfg",
-    "personal-p2": "Short description of AI news sdrfgdsfg dfg dfg dfdfdfdfg dffd fdg dffgdfgd dfg dfg gdf fdfgdf "
+    "projects": [
+        {
+            "id": 1,
+            "name": "Custom-made Mario AI Agent",
+            "description": "Created a Super Mario Bros clone using official assets, and mimicked the original physics as much as possible. Video is showing training process using a custom made training level.",
+            "skills": ["C#", "Unity", "Machine Learning (ML-Agents)"],
+            "github": "https://github.com/stevenschuler/portfolio-website/tree/main/CodeSnippets/Mario%20Clone",
+            "youtube": "https://www.youtube.com/embed/rYR4jLY1Bsw?si=4IB1chwsZPjJi9oV"
+        },
+        {
+            "id": 2,
+            "name": "AI News Segment Generator",
+            "description": "Breaking news segment generator using OpenAI API for both ChatGPT and DALL-E. Dialogue is generated on the fly, and a funny image is created to (hopefully) match the story.",
+            "skills": ["C#", "Unity", "OpenAI API Access", "Google TTS Access"],
+            "github": "https://github.com/stevenschuler/portfolio-website/tree/main/CodeSnippets/AI%20News",
+            "youtube": "https://www.youtube.com/embed/fqOuJBc1fkQ?si=BOpYCSSF1UMjxUGR"
+        },  
+        {
+            "id": 3,
+            "name": "Perfect Boxing Form Tutorial",
+            "class": "CSC 473 - Fundamentals of Computer Animation",
+            "description": "Utilized machine learning to train an agent to throw the most accurate and powerful punches imaginable (with perfect form of course).",
+            "skills": ["C#", "Unity", "Machine Learning (ML-Agents)", "Unorthodox Animation Creation"],
+            "github": "https://github.com/stevenschuler/portfolio-website/tree/main/CodeSnippets/Boxer",
+            "youtube": "https://www.youtube.com/embed/wW3XsJxuosE?si=B5foyGWU21UtThA8"
+        },
+        {
+            "id": 4,
+            "name": "Raytracer",
+            "class": "CSC 305 - Introduction to Computer Graphics",
+            "description": "Created a raytracer that can render very simple scenes consisting of spheres. It renders ambient and diffuse light, although reflected light produces some bugs still. It may look dull, but this was the most challenging yet rewarding project from my school career.",
+            "skills": ["C++", "Implementing physics equations into code", "Graphical rendering"],
+            "github": "https://github.com/stevenschuler/portfolio-website/tree/main/CodeSnippets/Raytracer",
+            "youtube": "https://www.youtube.com/embed/rYR4jLY1Bsw?si=4IB1chwsZPjJi9oV"
+        }  
+    ],
+    "disclaimer": "(Demo video coming soon)"
 }

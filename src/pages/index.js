@@ -6,6 +6,7 @@ import About from "../Components/About/About"
 import Projects from "../Components/Projects/Projects"
 import Contact from "../Components/Contact/Contact"
 import "../Styles/global.css"
+import styled, {css} from "styled-components";
 
 const IndexPage = () => {
   return (
@@ -15,12 +16,13 @@ const IndexPage = () => {
       <title>Steven Schuler</title> 
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Helmet>
+      
     
       <div className="page-layout">
-        <Intro role="developer" backgroundColor="orangered"/>
+        <Intro role="software developer" backgroundColor="orangered"/>
         <About backgroundColor="#e5e8e7"/>
-        <Projects backgroundColor="#c9c9c9"/>
-        <Contact backgroundColor="#e5e8e7"/>
+        <Projects bgLight="#e5e8e7" bgDark="#c9c9c9"/>
+        <Contact backgroundColor="#c9c9c9"/>
       </div>
       
     </main>
